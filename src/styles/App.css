@@ -1,0 +1,138 @@
+/* =================== App Layout =================== */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Main content grows to push footer down */
+.flex-grow-1 {
+  flex-grow: 1;
+  padding: 1rem;
+  background-color: #f8f9fa;
+}
+
+/* =================== Navbar =================== */
+.navbar-nav .nav-link {
+  margin-right: 1rem;
+}
+
+.navbar-nav .nav-link.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* =================== Cards =================== */
+.card {
+  border: none;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  margin-bottom: 1rem;
+  border-radius: 0.375rem;
+}
+
+/* Card header */
+.card-header {
+  background-color: #f8f9fa;
+  font-weight: 600;
+}
+
+/* =================== Tables =================== */
+.table th {
+  border-top: none;
+  font-weight: 600;
+  background-color: #f8f9fa;
+}
+
+.table td, .table th {
+  vertical-align: middle;
+}
+
+/* =================== Buttons =================== */
+.btn {
+  border-radius: 0.375rem;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+/* =================== Form Controls =================== */
+.form-control, .form-select {
+  border-radius: 0.375rem;
+}
+
+/* =================== Alerts =================== */
+.alert {
+  border: none;
+  border-radius: 0.5rem;
+}
+
+/* =================== Footer =================== */
+footer {
+  background-color: #1a1a1a; /* dark background */
+  color: #fff;
+  font-size: 0.85rem;
+  padding: 0.75rem 1rem;
+  border-top: 1px solid #333;
+}
+
+/* Footer container flex */
+footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  footer .container {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+/* Footer links */
+footer a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 0.5rem;
+  transition: color 0.2s ease-in-out;
+}
+
+footer a:hover {
+  color: #0d6efd;
+  text-decoration: underline;
+}
+
+/* Social icons spacing */
+footer i {
+  font-size: 1rem;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+footer small {
+  font-size: 0.75rem;
+}
+
+/* Footer compact spacing */
+footer .mb-2 {
+  margin-bottom: 0.25rem !important;
+}
+
+/* =================== Responsive Utilities =================== */
+.text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.spinner-border {
+  width: 3rem;
+  height: 3rem;
+}
+
+.badge {
+  font-size: 0.85rem;
+}
